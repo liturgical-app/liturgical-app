@@ -40,3 +40,9 @@ docker build -t liturgical-colour:dev .
 
 A [Helm chart](https://artifacthub.io/packages/helm/djjudas21/liturgical-colour)
 is available for deploying on Kubernetes.
+
+## Configure
+
+This app takes only one config option as an environment variable.
+
+* `LITURGICAL_API_URL` - URL of a Liturgical API server. The default is `https://liturgical-api.gazeley.uk` and you would not normally need to override this, unless you are hosting your own Liturgical API.
