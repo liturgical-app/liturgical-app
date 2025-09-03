@@ -20,7 +20,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            djjudas21/liturgical-colour-app
+            liturgical-app/liturgical-app
 
       - name: Login to DockerHub
         uses: docker/login-action@v3

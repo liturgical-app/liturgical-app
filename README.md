@@ -2,7 +2,7 @@
 
 A simple app to display the current liturgical colour of the Church of England.
 
-It is based on the [Liturgical Colour](https://github.com/djjudas21/liturgical-colour)
+It is based on the [Liturgical Calendar](https://github.com/liturgical-app/liturgical-calendar)
 library with a simple UI written with [Flask](https://pypi.org/project/Flask/)
 and [Bootstrap](https://getbootstrap.com/).
 
@@ -22,23 +22,23 @@ flask run
 
 PRs are welcome, but should pass the Pylint tests.
 
-[Issues](https://github.com/djjudas21/liturgical-colour-app/issues) should
+[Issues](https://github.com/liturgical-app/liturgical-app/issues) should
 be logged against this project for problems with the UI only.
 Problems relating to the calculations of dates, colours and the calendar of
 feasts should be logged against the
-[Liturgical Colour](https://github.com/djjudas21/liturgical-colour/issues) library.
+[Liturgical Colour](https://github.com/liturgical-app/liturgical-calendar/issues) library.
 
 ## Build
 
 This project can be built as a Docker image with
 
 ```sh
-docker build -t liturgical-colour:dev .
+docker build -t liturgical-calendar:dev .
 ```
 
 ## Run
 
-A [Helm chart](https://artifacthub.io/packages/helm/djjudas21/liturgical-colour)
+A [Helm chart](https://artifacthub.io/packages/helm/liturgical-app/liturgical-calendar)
 is available for deploying on Kubernetes.
 
 ## Configure
