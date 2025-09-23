@@ -11,7 +11,7 @@ from prometheus_flask_exporter import PrometheusMetrics
 # Main Flask app
 app = Flask(__name__)
 
-url = os.getenv('LITURGICAL_API_URL', default='https://liturgical-api.gazeley.uk')
+url = os.getenv('LITURGICAL_API_URL', default='https://api.liturgical.uk')
 
 # Initialize metrics without an app (or with None)
 metrics = PrometheusMetrics(app)
