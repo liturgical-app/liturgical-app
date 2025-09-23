@@ -45,4 +45,4 @@ is available for deploying on Kubernetes.
 
 This app takes only one config option as an environment variable.
 
-* `LITURGICAL_API_URL` - URL of a Liturgical API server. The default is `https://liturgical-api.gazeley.uk` and you would not normally need to override this, unless you are hosting your own Liturgical API.
+* `LITURGICAL_API_URL` - URL of a Liturgical API server. The default is `https://api.liturgical.uk` and you should not normally need to override this, unless you are hosting your own Liturgical API.
