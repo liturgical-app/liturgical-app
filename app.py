@@ -6,10 +6,15 @@ import json
 import os
 import requests
 from flask import Flask, request, render_template, send_file
+from prometheus_flask_exporter import PrometheusMetrics
 
+# Main Flask app
 app = Flask(__name__)
 
 url = os.getenv('LITURGICAL_API_URL', default='https://liturgical-api.gazeley.uk')
+
+# Initialize metrics without an app (or with None)
+metrics = PrometheusMetrics(app)
 
 @app.route('/', methods =["GET", "POST"])
 def main():
