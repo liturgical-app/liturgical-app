@@ -5,7 +5,7 @@ from datetime import date, datetime
 import json
 import os
 import requests
-from flask import Flask, request, render_template, send_file
+from flask import Flask, request, render_template, send_file, jsonify
 from prometheus_flask_exporter import PrometheusMetrics
 
 # Main Flask app
@@ -59,3 +59,11 @@ def serve_sw():
     Return the service worker
     """
     return send_file('sw.js', mimetype='application/javascript')
+
+@app.route('/healthz', methods=['GET'])
+@metrics.do_not_track()
+def health_check():
+    """
+    Kubernetes health probe
+    """
+    return jsonify({'status': 'healthy'}), 200
