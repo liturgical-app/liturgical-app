@@ -39,7 +39,7 @@ docker pull ghcr.io/liturgical-app/liturgical-app:latest
 
 ## Run
 
-A [Helm chart](https://artifacthub.io/packages/helm/liturgical-app/liturgical-calendar)
+A [Helm chart](https://artifacthub.io/packages/helm/liturgical/liturgical-app)
 is available for deploying on Kubernetes.
 
 ## Configure
